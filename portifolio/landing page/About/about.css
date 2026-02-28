@@ -1,0 +1,270 @@
+<!--Fontes-->
+
+
+.smooch-sans-<uniquifier> {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: #111827;
+    
+}
+
+.hero {
+  position: relative;
+  min-height: 32vh; 
+  background-image: url("../../imagens/sprr.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 17, 32, 0.55);
+}
+
+.nav-container {
+  position: relative; 
+  z-index: 2;
+
+  padding: 22px 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FACC15;
+  font-size: 1.7rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.menu a {
+  color: #FAF7F2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #FACC15;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 20px;
+  }
+
+  .menu {
+    gap: 16px;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  font-family: "Smooch Sans", sans-serif;
+  font-style: normal;
+    font-weight: 600;
+
+  height: calc(22vh - 100px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #5d616dbb;
+}
+
+.nome{
+    color: #FACC15;
+    font-weight: 300;
+}
+
+.eng{
+    color: #FAF7F2;
+}
+
+.titserv{
+    margin: 40px auto;
+    text-align: center;
+    color: #FACC15;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: solid underline #FACC15;
+}
+
+.boxcard{
+  background-color: #1F2937;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  border: 2px solid #FACC15;
+}
+
+
+.titulocard{
+    color: #FACC15;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 15px;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.textocard{
+    color: #FAF7F2;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 1.5;
+    padding: 20px 20px 20px 20px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.tituloprincipal{
+    text-align: center;
+    color: #FACC15;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    margin-top: 25px;
+}
+
+.textoprincipal{
+    margin: 40px auto;
+    width: 60%;
+    text-align: justify;
+    color: #FAF7F2;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.6;
+}
+
+.bold{
+    color: #FACC15;
+}
+
+#cores{
+    color: #FACC15;
+    font-weight: 700;
+}
+
+.valorant{
+    color: rgb(233, 113, 113);
+}
+
+.udemy{
+    color: purple;
+}
+
+#curso{
+  text-decoration: none;
+  color: #FACC15;
+}
+
+
+/* FOOTER */
+
+
+
+footer{
+  width: 100%;
+  color: #FACC15;
+}
+
+#footer_content{
+  background-color: #0d162b;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h2{
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_midia{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_midia .footer_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+}
+
+#instagram{
+ background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+ color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+}
+
+#linkedin{
+  background-color: #4267b3;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+}
+
+#whatsapp{
+  background-color: #25d366;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+}
